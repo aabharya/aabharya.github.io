@@ -8,7 +8,7 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://abharya.ir/",
+  site: SITE.website,
   integrations: [
     tailwind({
       applyBaseStyles: false,
