@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: Ali Abharya
 pubDatetime: 2023-01-30T15:57:52.737Z
 title: AstroPaper 2.0
 slug: astro-paper-2
