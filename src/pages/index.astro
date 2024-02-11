@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import TechStack from "@components/TechStack.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
@@ -24,42 +25,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>Ali Abharya</h1>
-      <p>
-        <img class="rss-icon d-none" src = "/assets/icons/python.svg" alt="python"/>
-        <img class="rss-icon d-none" src = "/assets/icons/django.svg" alt="django"/>
-        <img class="rss-icon d-none" src = "/assets/icons/fastapi.svg" alt="fastapi"/>
-        <img class="rss-icon d-none" src = "/assets/icons/pytest.svg" alt="pytest"/>
-        <img class="rss-icon d-none" src = "/assets/icons/pydantic.svg" alt="pydantic"/>
-        <img class="rss-icon d-none" src = "/assets/icons/celery.svg" alt="celery"/>
-        <img class="rss-icon d-none" src = "/assets/icons/scrapy.svg" alt="scrapy"/>
-        <img class="rss-icon d-none" src = "/assets/icons/docker.svg" alt="docker"/>
-        <img class="rss-icon d-none" src = "/assets/icons/kubernetes.svg" alt="kubernetes"/>
-        <img class="rss-icon d-none" src = "/assets/icons/minio.svg" alt="minio"/>
-        <img class="rss-icon d-none" src = "/assets/icons/apachekafka.svg" alt="apachekafka"/>
-        <img class="rss-icon d-none" src = "/assets/icons/rabbitmq.svg" alt="rabbitmq"/>
-        <img class="rss-icon d-none" src = "/assets/icons/argo.svg" alt="argo"/>
-        <img class="rss-icon d-none" src = "/assets/icons/gnubash.svg" alt="gnubash"/>
-        <img class="rss-icon d-none" src = "/assets/icons/git.svg" alt="git"/>
-        <img class="rss-icon d-none" src = "/assets/icons/sentry.svg" alt="sentry"/>
-        <img class="rss-icon d-none" src = "/assets/icons/nginx.svg" alt="nginx"/>
-        <img class="rss-icon d-none" src = "/assets/icons/jenkins.svg" alt="jenkins"/>
-        <img  class="rss-icon d-none" src = "/assets/icons/postgresql.svg" alt="postgresql"/>
-        <img class="rss-icon d-none" src = "/assets/icons/oracle.svg" alt="postgresql"/>
-        <img class="rss-icon d-none" src = "/assets/icons/mongodb.svg" alt="mongodb"/>
-        <img class="rss-icon d-none" src = "/assets/icons/redis.svg" alt="redis"/>
-        <img class="rss-icon d-none" src = "/assets/icons/nodedotjs.svg" alt="nodedotjs"/>
-        <img class="rss-icon d-none" src = "/assets/icons/typescript.svg" alt="typescript"/>
-        <img class="rss-icon d-none" src = "/assets/icons/vuedotjs.svg" alt="vuedotjs"/>
-        <img class="rss-icon d-none" src = "/assets/icons/vuetify.svg" alt="vuetify"/>
-        <img class="rss-icon d-none" src = "/assets/icons/quasar.svg" alt="quasar"/>
-        <img class="rss-icon d-none" src = "/assets/icons/sass.svg" alt="sass"/>
-        <img class="rss-icon d-none" src = "/assets/icons/bootstrap.svg" alt="bootstrap"/>
-        <img class="rss-icon d-none" src = "/assets/icons/jquery.svg" alt="jquery"/>
-        <img class="rss-icon d-none" src = "/assets/icons/d3dotjs.svg" alt="d3"/>
-        <img class="rss-icon d-none" src = "/assets/icons/ubuntu.svg" alt="ubuntu"/>
-        <img class="rss-icon d-none" src = "/assets/icons/pycharm.svg" alt="pycharm"/>
-        <img class="rss-icon d-none" src = "/assets/icons/visualstudiocode.svg" alt="visualstudiocode"/>
-      </p>
+      <TechStack />
       <p>
         I'm a practical software developer with 4 years of experience in delivering
         pythonic solutions for various text analysis and scraping tasks as well as
