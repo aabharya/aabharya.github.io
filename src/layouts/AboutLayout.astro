@@ -3,6 +3,8 @@ import { SITE } from "@config";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
+import Hr from "@components/Hr.astro";
+import TechStack from "@components/TechStack.astro";
 import Layout from "./Layout.astro";
 
 export interface Props {
@@ -20,7 +22,10 @@ const { frontmatter } = Astro.props;
   <Breadcrumbs />
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+      <h1 class="text-2xl tracking-wider sm:text-3xl">Tech stack</h1>
+      <TechStack />
+      <Hr />
+      <h1 class="text-2xl tracking-wider sm:text-3xl">Projects</h1>
       <slot />
     </section>
   </main>
