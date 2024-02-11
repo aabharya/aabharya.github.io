@@ -3,6 +3,7 @@ import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 
 const currentYear = new Date().getFullYear();
+const buildNumber = import.meta.env.BUILD_NUMBER || 7;
 
 export interface Props {
   noMarginTop?: boolean;
@@ -16,6 +17,8 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
+      <span>Build {buildNumber}</span>
+      <span class="separator">&nbsp;|&nbsp;</span>
       <span>Copyright &#169; {currentYear}</span>
       <span class="separator">&nbsp;|&nbsp;</span>
       <span>All rights reserved.</span>
