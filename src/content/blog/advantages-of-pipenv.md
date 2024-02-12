@@ -1,6 +1,6 @@
 ---
 author: Ali Abharya
-pubDatetime: 2024-01-20T19:12:37.909Z
+pubDatetime: 2024-02-20T19:12:37.909Z
 modDatetime: 2024-02-20T19:12:37.909Z
 title: Advantages of pipenv
 slug: advantages-of-pipenv
