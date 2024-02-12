@@ -1,7 +1,7 @@
 ---
 author: Ali Abharya
-pubDatetime: 2024-02-18T19:12:37.909Z
-modDatetime: 2024-02-18T19:12:37.909Z
+pubDatetime: 2024-02-07T17:57:37.939Z
+modDatetime: 2024-02-07T17:57:37.939Z
 title: Nginx security practices
 slug: nginx-security-practices
 featured: true
@@ -14,7 +14,7 @@ tags:
 description: Nginx security practices
 ---
 
-# Hardening Nginx Server and Security Practices
+## Hardening Nginx Server and Security Practices
 
 ## 1. Update and Upgrade System Packages
 
