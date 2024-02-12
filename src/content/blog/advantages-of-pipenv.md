@@ -9,7 +9,7 @@ draft: false
 tags:
   - python
   - pipenv
-description: ""
+description: Advanteges of pipenv over pip
 ---
 
 ## Understanding Pipenv and Its Advantages

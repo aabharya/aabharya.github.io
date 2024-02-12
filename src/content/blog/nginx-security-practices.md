@@ -11,7 +11,7 @@ tags:
   - security
   - deployment
   - configuration
-description: ""
+description: Nginx security practices
 ---
 
 # Hardening Nginx Server and Security Practices
