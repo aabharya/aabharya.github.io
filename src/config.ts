@@ -1,4 +1,5 @@
 import type { Site, SocialObjects } from "./types";
+import type { GiscusProps } from "@giscus/react";
 
 export const SITE: Site = {
   website: "https://abharya.ir/", // replace this with your deployed domain
@@ -22,6 +23,20 @@ export const LOGO_IMAGE = {
   width: 216,
   height: 46,
 };
+
+export const GISCUS: GiscusProps = {
+  repo: "BinDruid/BinDruid.github.io",
+  repoId: "R_kgDOLPWwmQ",
+  category: "Announcements",
+  categoryId: "DIC_kwDOLPWwmc4CmDMp",
+  mapping: "pathname",
+  reactionsEnabled: "1",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  lang: "en",
+  loading: "lazy",
+};
+
 
 export const SOCIALS: SocialObjects = [
   {
