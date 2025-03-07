@@ -20,7 +20,7 @@ jobs:
       - name: Install, build, and upload your site
         env:
           BUILD_NUMBER: ${{ github.run_number }}
-        uses: withastro/action@v1
+        uses: withastro/action@v2
 
   deploy:
     needs: build
