@@ -10,7 +10,6 @@ tags:
   - postgresql
   - django
   - database
-  - ci/cd
   - unit test
 
 description: How to apply non durable config to postgres in CI/CD pipeline
