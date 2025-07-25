@@ -4,8 +4,8 @@ import type { GiscusProps } from "@giscus/react";
 export const SITE: Site = {
   website: "https://abharya.ir/", // replace this with your deployed domain
   author: "Ali Abharya",
-  desc: "Personal Daily blog",
-  title: "BinDruid",
+  desc: "Personal Daily Technical Blog",
+  title: "Druid",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
@@ -26,7 +26,7 @@ export const LOGO_IMAGE = {
 };
 
 export const GISCUS: GiscusProps = {
-  repo: "BinDruid/BinDruid.github.io",
+  repo: "aabharya/aabharya.github.io",
   repoId: "R_kgDOLPWwmQ",
   category: "Announcements",
   categoryId: "DIC_kwDOLPWwmc4CmDMp",
@@ -41,7 +41,7 @@ export const GISCUS: GiscusProps = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/BinDruid",
+    href: "https://github.com/aabharya",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
