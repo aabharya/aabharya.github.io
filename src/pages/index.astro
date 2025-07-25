@@ -24,130 +24,152 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Ali Abharya</h1>
+      <h1>علی ابهریا</h1>
       <TechStack />
       <p>
-        I am a practical software developer with 4 years of experience in delivering Pythonic solutions
-        for various web development tasks including REST and grpc API implementation, database query optimization
-        and effectively unit testing business services.
-        As an open source developer I actively maintain two django packages:
-        <a href="https://pypi.org/project/django-persian-pdf/" class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"><h3 style="view-transition-name:named-tuple-in-python" class="text-lg font-medium decoration-dashed hover:underline">django-persian-pdf</h3></a>
-        <a href="https://pypi.org/project/django-cache-pydantic/" class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"><h3 style="view-transition-name:named-tuple-in-python" class="text-lg font-medium decoration-dashed hover:underline">django-cache-pydantic</h3></a>
+        من توسعه‌دهنده‌ی نرم‌افزار با چهار سال سابقه در ارائه‌ی راه‌حل‌های مختلف
+        در زمینه‌ی توسعه‌ی وب هستم. علائق من بیشتر متمرکز در پیاده‌سازی APIهای
+        REST و gRPC، بهینه‌سازی کوئری‌های پایگاه داده، و یونیت‌تست سرویس‌هاست.
+        همچنین به عنوان توسعه‌دهنده‌ی متن‌باز، به‌صورت فعال نگهداری دو پکیج
+        جنگویی زیر رو انجام می‌دم:
+        <a
+          href="https://pypi.org/project/django-persian-pdf/"
+          class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+          ><h3
+            style="view-transition-name:named-tuple-in-python"
+            class="text-lg font-medium decoration-dashed hover:underline"
+          >
+            django-persian-pdf
+          </h3></a
+        >
+        <a
+          href="https://pypi.org/project/django-cache-pydantic/"
+          class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+          ><h3
+            style="view-transition-name:named-tuple-in-python"
+            class="text-lg font-medium decoration-dashed hover:underline"
+          >
+            django-cache-pydantic
+          </h3></a
+        >
       </p>
       <p>
-        Having the mindset of "Gain More With Less Code"
-        enables me to maintain equilibrium between technical best practices and the
-        demands of the business, positioning me as a pragmatic developer who leans
-        towards novel solutions grounded in design patterns and written by clean code.
+        نگرش من همیشه بر پایه «دستاورد بیشتر با کد کمتر» بوده و به من این امکان
+        رو داده که بین بست‌پرکتیس‌های فنی و نیازهای کسب‌وکاری تعادل برقرار کنم.
+        این رویکرد، من رو به توسعه‌دهنده‌ای عمل‌گرا تبدیل کرده که همیشه به دنبال
+        راه‌حل‌های نوآورانه،‌ مبتنی بر کد تمیز و منظم و بر اساس دیزاین‌پترن‌های
+        رایج هست.
       </p>
       <p>
-        Following the Golden Rule in software development context, the end-user
-        experience is a top priority for me. By the same rule I dedicate myself
-        to creating a collaborative and inclusive atmosphere, ensuring that
-        the psychological safety of my teammates stands as a cornerstone for our achievements.
-      <p/>
+        «قاعده‌ی طلایی» در زمینه‌ی توسعه‌ی نرم‌افزار برای من همیشه یک اصل مهم
+        هست و به همین خاطر تجربه‌ی کاربر نهایی رو در اولویت قرار می‌دم. تو فضای
+        تیم توسعه هم مشارکت و انتقال دانش و تجربه برام از اولویت‌های خیلی مهم
+        هستن و همیشه سعی کردم که در فعالیت‌های تیمی امنیت روانی هم‌تیمی‌هام آسیب
+        نبینه.
+        <p></p>
+        {
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <div class="social-links">شبکه‌های اجتماعی:</div>
+              <Socials />
+            </div>
+          )
+        }
+      </p>
+
+      <Hr />
+
       {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
-
-    <Hr />
-
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < 4 && (
+        featuredPosts.length > 0 && (
+          <>
+            <section id="featured">
+              <h2>پست‌های برگزیده</h2>
+              <ul>
+                {featuredPosts.map(({ data, slug }) => (
                   <Card
                     href={`/posts/${slug}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
-                )
-            )}
-          </ul>
-        </section>
-      )
-    }
+                ))}
+              </ul>
+            </section>
+            {recentPosts.length > 0 && <Hr />}
+          </>
+        )
+      }
 
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
-        All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
-      </LinkButton>
-    </div>
+      {
+        recentPosts.length > 0 && (
+          <section id="recent-posts">
+            <h2>پست‌های اخیر</h2>
+            <ul>
+              {recentPosts.map(
+                ({ data, slug }, index) =>
+                  index < 4 && (
+                    <Card
+                      href={`/posts/${slug}/`}
+                      frontmatter={data}
+                      secHeading={false}
+                    />
+                  )
+              )}
+            </ul>
+          </section>
+        )
+      }
+
+      <div class="all-posts-btn-wrapper">
+        <LinkButton href="/posts/">
+          همه پست‌ها
+          <svg xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"
+            ></path>
+          </svg>
+        </LinkButton>
+      </div>
+    </section>
+
+    <Footer />
   </main>
 
-  <Footer />
+  <style>
+    /* ===== Hero Section ===== */
+    #hero {
+      @apply pb-6 pt-8;
+    }
+    #hero h1 {
+      @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    }
+    #hero .rss-link {
+      @apply mb-6;
+    }
+    #hero .rss-icon {
+      @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    }
+    #hero p {
+      @apply my-2;
+    }
+    .social-wrapper {
+      @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    }
+    .social-links {
+      @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    }
+
+    /* ===== Featured & Recent Posts Sections ===== */
+    #featured,
+    #recent-posts {
+      @apply pb-6 pt-12;
+    }
+    #featured h2,
+    #recent-posts h2 {
+      @apply text-2xl font-semibold tracking-wide;
+    }
+    .all-posts-btn-wrapper {
+      @apply my-8 text-center;
+    }
+  </style>
 </Layout>
-
-<style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
-
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
-  #recent-posts {
-    @apply pb-6 pt-12;
-  }
-  #featured h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  .all-posts-btn-wrapper {
-    @apply my-8 text-center;
-  }
-</style>
