@@ -64,7 +64,7 @@
     prose-code:bg-opacity-75 prose-code:p-1
     prose-code:before:!content-none prose-code:after:!content-none
     prose-ol:!text-skin-base
-    prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
+    prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
     prose-table:text-skin-base prose-th:border
     prose-th:border-skin-line prose-td:border
     prose-td:border-skin-line prose-img:!my-2
