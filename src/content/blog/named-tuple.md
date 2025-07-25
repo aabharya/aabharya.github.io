@@ -1,24 +1,27 @@
 ---
-author: Ali Abharya
+author: علی ابهریا
 pubDatetime: 2024-02-15T09:13:38.039Z
 modDatetime: 2024-02-15T09:13:38.039Z
-title: Named tuple in python
+title: Named Tuple در پایتون
 slug: named-tuple
 featured: false
 draft: false
 tags:
   - python
   - clean_code
-description: Advantages of using named tuple
+description: مزیت‌های استفاده از named tuple
 ---
 
-# NamedTuple in Python
+# Named Tuple در پایتون
 
-## Introduction
-A `namedtuple` is a convenient and lightweight data structure available in the Python standard library's `collections` module. It is essentially a subclass of tuples with named fields, providing a more readable and self-documenting way to define simple classes for storing data. Namedtuples combine the immutability of tuples with the attribute-accessibility of dictionaries, making them a valuable tool for creating simple data containers.
+## مقدمه
 
-## Usage
-To create a named tuple, you can use the `namedtuple` factory function from the `collections` module. The function takes two arguments: the typename (a string representing the name of the named tuple) and the field names (either a single string with space-separated names or an iterable of strings). Here's an example:
+`namedtuple` یه ساختار داده‌ی سبک و کاربردیه که در ماژول `collections` از کتابخانه استاندارد پایتون در دسترس هست. این ساختار در واقع یه زیرکلاس از `tuple` هست که فیلدهاش نام‌گذاری‌ شدن و به همین خاطر نسبت به `tuple`های معمولی خواناتر هست. `namedtuple‌`مانند `immutabile` `tuple` هستن.
+
+## نحوه استفاده
+
+برای ایجاد یک `named tuple`، باید از تابع `namedtuple` در ماژول `collections` استفاده کرد. این تابع دو آرگومان دریافت می‌کنه:
+`typename`: نام نوع داده به‌صورت رشته و `field names`: نام فیلدها که یک `iterable` از رشته‌ها می‌تونه باشه.
 
 ```python
   from collections import namedtuple
@@ -34,17 +37,16 @@ To create a named tuple, you can use the `namedtuple` factory function from the 
   print(person_instance.age)   # Output: 25
 ```
 
-## Advantages
-- Readability: Namedtuples enhance code readability by providing meaningful names to fields, making it easier to  understand the purpose of each element in the tuple.
+## مزایا
 
-- Immutability: Like regular tuples, namedtuples are immutable. This ensures data integrity, preventing accidental modification of the stored values.
+- خوانایی: استفاده از `namedtuple` خوانایی کد رو زیاد می‌کنه چون که فیلدها دارای نام‌های معنادار میشن.
 
-- Memory Efficiency: Namedtuples are memory-efficient as they are implemented in C and have a smaller memory footprint compared to custom classes or dictionaries.
+- `immutability`: همانند `tuple`های معمولی، `namedtuple`ها هم تغییرناپذیر هستند. این ویژگی باعث حفظ یکپارچگی داده‌ها میشه و از تغییرات ناخواسته جلوگیری می‌کند.
 
-- Compatibility: Namedtuples are backward-compatible with regular tuples, allowing seamless integration with existing code that expects tuple-like behavior.
+- کارایی حافظه: `namedtuple`ها از حافظه به‌صورت بهینه استفاده می‌کنند، چون با زبان C پیاده‌سازی شدن و نسبت به بقیه کلاس‌های custom یا دیکشنری‌ها مصرف حافظه کمتری دارند.
 
-## When to use
-Namedtuples are particularly useful in scenarios where you need a simple and lightweight data structure to represent a fixed set of fields. They are well-suited for situations such as configuration settings, representing records in a dataset, or any case where immutability and attribute-style access are beneficial.
+- سازگاری: `namedtuple`ها با `tuple`های معمولی سازگارن یا به عبارت دیگه اینترفیس مشابهی دارن، بنابراین میشه اون‌ها را بدون مشکل در کدهایی که انتظار ساختار `tuple` دارن هم استفاده کرد.
 
-In summary, namedtuples offer a clean and concise way to define data structures in Python, combining the benefits of tuples with the readability of named fields.
+## جمع‌بندی
 
+`namedtuple`ها زمانی کاربرد دارن که به یک ساختار داده‌ ساده و سبک با مجموعه‌ای ثابت از فیلدها نیاز داریم. این ساختار برای مواردی مانند تنظیمات پیکربندی، نمایش رکوردهای یک مجموعه داده، یا هر موقعیتی که در آن `immutability` و دسترسی به فیلدها با نام مزیت محسوب میشه مناسب هست. `namedtuple‌`ها راهی تمیز، مختصر و خوانا برای تعریف ساختارهای داده‌ای در پایتون فراهم می‌کنن که در کنار مزایای `tuple`ها قابلیت نام‌گذاری‌ فیلدهاش رو هم داره.
