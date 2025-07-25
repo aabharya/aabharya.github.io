@@ -13,8 +13,9 @@ export const SITE: Site = {
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  dir: "rtl",
+  lang: "fa", // html lang code. Set this empty and default will be "en"
+  langTag: ["fa-ir"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
@@ -36,7 +37,6 @@ export const GISCUS: GiscusProps = {
   lang: "en",
   loading: "lazy",
 };
-
 
 export const SOCIALS: SocialObjects = [
   {
