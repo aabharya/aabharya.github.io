@@ -117,8 +117,13 @@
     @apply bg-skin-card-muted;
   }
 
+  blockquote {
+    word-wrap: break-word;
+    direction: rtl;
+  }
+
+
   code,
-  blockquote,
   .astro-code {
     word-wrap: break-word;
     direction: ltr;
