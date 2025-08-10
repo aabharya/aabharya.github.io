@@ -77,7 +77,7 @@
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
-    padding-left: 0.5714286em;
+    padding-right: 0.5714286em;
   }
   .prose h2#table-of-contents {
     @apply mb-2;
@@ -137,6 +137,24 @@
   p {
     text-align: justify;
   }
+
+  thead{
+    direction: rtl;
+    text-align: center;
+  }
+
+  tbody{
+    direction: rtl;
+    text-align: start;
+  }
+
+  td{
+    direction: rtl;
+    text-align: start;
+    padding-right: 0.5714286em;
+  }
+
+
 }
 
 @layer components {
