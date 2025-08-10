@@ -2,7 +2,8 @@
 author: Ali Abharya
 pubDatetime: 2024-04-04T17:57:37.939Z
 modDatetime: 2024-04-04T17:57:37.939Z
-title: Feature Flags in django
+title: Feature Flags in Django
+title_seo: Feature Flags in Django
 slug: feature-flags-in-django
 featured: true
 draft: false
@@ -21,7 +22,6 @@ description: How to implement feature flags in djago applications
 **Feature Flags** also known as feature toggles or feature switches, are a powerful tool in a developer's arsenal for controlling the release of new features or changes in a software application. By decoupling feature rollout from code deployment, feature flags enable teams to manage features dynamically, reduce risks associated with new releases, and gather valuable user feedback. In this blog post, I explore various techniques and best practices for implementing feature flags in **Django** projects.
 
 ## What, Why, When
-
 
 ## How to
 
@@ -68,6 +68,7 @@ def my_view(request):
 ## Environment-based Flags
 
 - Utilize environment variables to control feature flags in different environments such as development, staging, and production. This approach allows for easy configuration without modifying the codebase. You can use Django's settings module to access environment variables and define feature flag states accordingly.
+
 ```python
 # settings.py
 import os

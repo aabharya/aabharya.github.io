@@ -3,14 +3,14 @@ author: Ali Abharya
 pubDatetime: 2024-02-10T16:22:37.939Z
 modDatetime: 2024-02-10T16:22:37.939Z
 title: SSE and Long Polling Mechanisms in Web Development
+title_seo: SSE and Long Polling Mechanisms in Web Development
 slug: sse-long-polling-mechanisms
 featured: true
 draft: false
 tags:
   - polling
   - pushing
-description:
-  In web development, polling is a technique used to retrieve updated information from a server by periodically sending requests. The client regularly checks for new data by making HTTP requests at fixed intervals. While simple to implement, polling can be inefficient as it may lead to unnecessary requests even when there is no new information.
+description: In web development, polling is a technique used to retrieve updated information from a server by periodically sending requests. The client regularly checks for new data by making HTTP requests at fixed intervals. While simple to implement, polling can be inefficient as it may lead to unnecessary requests even when there is no new information.
 ---
 
 ## Server-Sent Events (SSE)

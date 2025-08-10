@@ -3,6 +3,7 @@ author: Ali Abharya
 pubDatetime: 2025-07-07T14:24:25.248Z
 modDatetime: 2025-07-07T14:24:25.248Z
 title: معضل سنیوریتی لوکال و مرگ دانش
+title_seo: The Dilemma of Local Seniority and the Death of Knowledge
 slug: local-seniority
 featured: true
 draft: false

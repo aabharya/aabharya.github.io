@@ -18,7 +18,7 @@ export default (post: CollectionEntry<"blog">) => {
           position: "absolute",
           top: "-1px",
           right: "-1px",
-          border: "4px solid #000",
+          border: "4px solid #ff6B01",
           background: "#ecebeb",
           opacity: "0.9",
           borderRadius: "4px",
@@ -32,7 +32,7 @@ export default (post: CollectionEntry<"blog">) => {
 
       <div
         style={{
-          border: "4px solid #000",
+          border: "4px solid #ff6B01",
           background: "#fefbfb",
           borderRadius: "4px",
           display: "flex",
@@ -60,7 +60,7 @@ export default (post: CollectionEntry<"blog">) => {
               overflow: "hidden",
             }}
           >
-            {post.data.title}
+            {post.data.title_seo}
           </p>
           <div
             style={{
@@ -86,7 +86,7 @@ export default (post: CollectionEntry<"blog">) => {
             </span>
 
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
-              {SITE.title}
+              {SITE.website}
             </span>
           </div>
         </div>

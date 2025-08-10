@@ -3,6 +3,7 @@ author: Ali Abharya
 pubDatetime: 2024-02-07T17:57:37.939Z
 modDatetime: 2024-02-07T17:57:37.939Z
 title: Nginx security practices
+title_seo: Nginx Security Practices
 slug: nginx-security-practices
 featured: true
 draft: false

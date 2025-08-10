@@ -3,6 +3,7 @@ author: Ali Abharya
 pubDatetime: 2024-02-12T17:57:37.939Z
 modDatetime: 2024-02-12T17:57:37.939Z
 title: Polling and Pushing Mechanisms in Web Development
+title_seo: Polling and Pushing Mechanisms in Web Development
 slug: polling-pushing-mechanisms
 featured: true
 draft: false

@@ -3,6 +3,7 @@ author: علی ابهریا
 pubDatetime: 2024-02-15T09:13:38.039Z
 modDatetime: 2024-02-15T09:13:38.039Z
 title: Named Tuple در پایتون
+title_seo: Named Tuple in Python
 slug: named-tuple
 featured: false
 draft: false
