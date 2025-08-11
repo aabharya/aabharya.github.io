@@ -6,7 +6,7 @@ title: سوکت‌ها در سطح کرنل و پایتون
 title_seo: Socket API in Kernel and Python
 slug: socket-api
 featured: true
-draft: false
+draft: true
 tags:
   - socket
   - tcp
