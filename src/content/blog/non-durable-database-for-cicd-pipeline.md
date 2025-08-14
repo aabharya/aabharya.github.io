@@ -233,4 +233,4 @@ If you're looking for practical ways to speed up Django unit tests, I highly rec
 
 Still, my experiment was valuable. I learned a lot about database configuration. As **Uncle Johnny** said Once:
 
-`There is no shame in learning, and you only learn by failures` 🙏🏻
+> .🙏🏻 There is no shame in learning and you only learn by failures
